@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a = prompt("nhập mảng theo định dạng 1,2,3,4: ");
+    let arr = a.split(',')
+    let newArr = []
+    for (let i = 0; i < arr.length; i++) {
+        newArr.push(parseInt(arr[i]));
+    }
+    console.log(newArr)
+    for (let i = newArr.length - 1; i >= 0; i--) {
+        document.write(newArr[i] + ",")
+    }
+</script>

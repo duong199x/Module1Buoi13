@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    //Bài 5: Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.
+    //qwertyuiop
+    let str1 = prompt('nhập chuỗi 1:');
+    let str2 = prompt('nhập chuỗi 2:');
+    function checkLength(){
+        if (str1.length - str2.length > 0 ){
+            return str1.length
+        }else {
+            return  str2.length
+        }
+    }
+    let flag = true;
+    for (let i = 0; i < checkLength(); i++) {
+        if(str1[i] === str2[i]){
+            console.log(str1[i],str2[i])
+            flag = true
+        }else {
+            flag = false
+        }
+    }
+    if (flag){
+        console.log('chuỗi giống nhau')
+    }else {
+        console.log('chuỗi không giống nhau')
+    }
+</script>
